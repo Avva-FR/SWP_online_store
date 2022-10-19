@@ -1,0 +1,57 @@
+= Protokoll Gruppe 40
+
+Treffen am 24.11.2021
+
+Ort:      BBB +
+Beginn:   14:50 Uhr +
+Ende:     15:40 Uhr
+
+__Schriftführer: Ole Voß__
+
+*Nächstes Treffen:* +
+1.12.2021, 14:50 Uhr, BBB
+
+__Teilnehmer:__
+//Tabellarisch oder Aufzählung, Kennzeichnung von Teilnehmern mit besonderer Rolle (z.B. Kunde)
+
+- Bozhidar
+- Tobias
+- Ole
+- Markus
+- Jan
+- Florian
+
+== Bemerkungen
+__Zwischenmeeting__
+
+Merge Day war erfolgreich
+
+ToDo: +
+Sequenzdiagramme für komplexere Abläufe in Devdoku einfügen +
+
+Erinnerung daran, Tests fortlaufend zu schreiben (jUnit / Mockito)
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status |Bemerkung
+|…     |…       |…      |…
+|===
+
+
+== Aktueller Stand
+Basisfunktionen werden weiter implementiert
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|…     |…     |…            |…                |…
+|===

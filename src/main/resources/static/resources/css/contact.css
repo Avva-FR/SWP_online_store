@@ -1,0 +1,11 @@
+body{
+    margin:0;
+    padding:0;
+    background:#f0f0f0;
+    font-family: 'Helvetica', sans-serif;
+}
+.impressum{
+    margin-top: 1%;
+    margin-left: 1.5%;
+    margin-right: 2%;
+}

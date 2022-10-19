@@ -1,0 +1,35 @@
+= Persönliches Feedback eines Teammitgliedes des Softwarepraktikums 2021/22
+// Auch wenn der Bogen nicht anonymisiert ist, dürfen Sie gern Ihre Meinung offen kundtun.
+// Sowohl positive als auch negative Anmerkungen werden gern gesehen und zur stetigen Verbesserung genutzt.
+// Versuchen Sie in dieser Auswertung also stets sowohl Positives wie auch Negatives zu erwähnen.
+
+**Von: Jan Ole Voß**
+
+**Gruppe: 40**
+
+== Was habe ich gelernt / was habe ich nicht gelernt?
+Gelernt: +
+* Umgang mit Java, Spring und insbesondere Thymeleaf
+* Meilensteinorientiertes Arbeiten im Scrum-System
+
+Nicht gelernt: +
+* Noch nicht die komplette Spring-Magie verstanden
+
+== Welche Erfahrungen habe ich mit der Zusammenarbeit im Team gemacht?
+* Sehr gute Kommunikation
+* Es wurde sich untereinander geholfen
+* Gute Stimmung, was zu guter Arbeitsmoral führte
+
+== Welche Erfahrungen habe ich bei der Wiederverwendung von Bibliotheken/Frameworks (insbesondere SalesPoint) gemacht?
+* SalesPoint ist leider sehr statisch und lässt einem wenig individuelle Anpassungsmöglichkeiten
+* Lombok hat viel Arbeit erspart
+
+== Welche Vorschläge zur weiteren Verbesserung des Softwarepraktikums gibt es?
+* Kleine Mini-Tutorials im Rahmen des Weekly Meetings wären sehr hilfreich (z.B. zu SonarQube, Mockito)
+
+== Feedback für den Tutor
+* Gut organisiert, freundlich, hilfreich, hat sich Zeit für uns genommen und ist auf unsere Probleme gut eingegangen
+* 10/10, no doubt - vielen Dank Andreas!
+
+== Sonstiges und Anmerkungen
+* StarUML war eine Pein

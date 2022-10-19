@@ -1,0 +1,56 @@
+= Protokoll Gruppe 40
+
+Treffen am 20.10.2021
+
+Ort:      Ort des Treffens: Digital
+Beginn:   14:50 Uhr +
+Ende:     16:20 Uhr
+
+__Schriftführer:__Bozhidar Ivanov
+
+*Nächstes Treffen:* +
+27.10.2021, 14:50 - 16:20 Uhr, Raum unbekannt
+
+__Teilnehmer:__
+
+- Andreas Dowanowski: Tutor
+- Bozhidar
+- Tobias
+- Ole
+- Markus
+- Jan
+- Florian
+
+== Bemerkungen
+- Erstes Treffen von der Gruppe
+- Entscheidung getroffen, dass wir die wöchentlichen Treffen in Präsenz machen. Der Raum ist noch nicht bekannt.
+- Erklärungen über die Aufgabenstellung
+- Scrum-Master gewählt: Tobias
+- Protokollant gewählt: Bozho
+- Aufgabenverteilung für den Videoshop
+- Verwenden vom selben IDE wäre eine gute Entscheidung
+- Issues von den Aufgaben in GitHub erstellen
+
+== Retrospektive des letzten Sprints
+- Noch keinen Sprint
+
+
+
+
+== Aktueller Stand
+- Bearbeitung vom Pflichtenheft
+- Bearbeitung vom Vidoshop Aufgaben
+
+== Planung des nächsten Sprints
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|…     |Suche      |            |Ole               |angefangen
+|…     |Produkte bearbeiten      |            |Tobias              |angefangen
+|…     |Warenkorb Bearbeiten      |            |Jan               |angefangen
+|…     |Registrierung validieren      |            |Markus               |angefangen
+|…     |Genaue Bestellungen      |            |Flo               |angefangen
+|…     |Bewertung      |            |Bozho               |angefangen
+|===

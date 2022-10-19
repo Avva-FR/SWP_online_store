@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <!-- Bootstrap base-stylesheet without JS -->
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" rel="stylesheet">
+    <!-- registration specific stylesheet -->
+    <link href="/resources/css/usermanagementforms.css" rel="stylesheet"
+          th:href="@{/resources/css/usermanagementforms.css}" type="text/css"/>
+    <!-- navbar specific stylesheet -->
+    <link href="/resources/css/navbar.css" rel="stylesheet" th:href="@{/resources/css/navbar.css}" type="text/css"/>
+    <!--JS for dropdowns-->
+    <script crossorigin="anonymous"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <title>Mitarbeiter hinzufügen</title>
+
+</head>
+<body>
+<div th:include="navbar :: navbar"></div>
+<div class=".center">
+    <form class="ui form" id="centeredform" method="post" role="form" th:action="@{/addemployee}"
+          th:object="${employeeRegistrationForm}">
+        <div class="g-3">
+            <label class="form-label" for="InputUsername" th:text="#{registration.username}">Username</label>
+            <input aria-describedby="usernameHelp" class="form-control" id="InputUsername"
+                   placeholder="Please enter your Username." required="required"
+                   th:errorclass="fieldError" th:field="*{username}" type="text">
+            <p placeholder="Your Username needs to be entered." th:errors="*{username}"
+               th:if="${#fields.hasErrors('username')}"></p>
+        </div>
+        <div class="g-3">
+            <label class="form-label" for="InputEmail" th:text="#{registration.email}">Email address</label>
+            <input aria-describedby="emailHelp" class="form-control" id="InputEmail"
+                   placeholder="Plese enter your email." required="required"
+                   th:errorclass="fieldError" th:field="*{email}" type="text">
+            <p placeholder="Your Email needs to be entered." th:errors="*{email}"
+               th:if="${#fields.hasErrors('email')}"></p>
+        </div>
+        <div class="g-3">
+            <label class="form-label" for="password" th:text="#{registration.password}">Password</label>
+            <input aria-label="password" class="form-control" id="password" name="password"
+                   placeholder="Please enter a Password."
+                   required="required" th:errorclass="fieldError" th:field="*{password}"
+                   type="password">
+            <p placeholder="Your Password needs to be entered." th:errors="*{password}"
+               th:if="${#fields.hasErrors('password')}">errormessage</p>
+            <div class="form-text" id="passwordHelp">The Password must be at least 8 Letters long, contain Numbers
+                0...9, an Uppercase Letter, an Lowercase Letter and at least one special char!
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" for="passwordValidation"
+                   th:text="#{registration.passwordValidation}">Password</label>
+            <input aria-label="passwordValidation" class="form-control" id="passwordValidation"
+                   name="passwordValidation"
+                   placeholder="Please enter your Password again." required="required" th:errorclass="fieldError"
+                   th:field="*{passwordValidation}" type="password">
+            <p placeholder="Your Password needs to be entered." th:errors="*{passwordValidation}"
+               th:if="${#fields.hasErrors('passwordValidation')}">errormessage2</p>
+            <div class="form-text" id="passwordHelp">The Password must be at least 8 Letters long, contain Numbers
+                0...9, an Uppercase Letter, an Lowercase Letter and at least one special char!
+            </div>
+        </div>
+        <button class="btn btn-outline-primary btn-lg" href="landingpage.html" th:text="#{registration.submit}"
+                type="submit">Submit
+        </button>
+    </form>
+</div>
+</body>
+</html>

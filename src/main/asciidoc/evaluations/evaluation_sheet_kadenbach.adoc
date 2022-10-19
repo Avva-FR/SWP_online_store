@@ -1,0 +1,40 @@
+= Persönliches Feedback eines Teammitgliedes des Softwarepraktikums 2021/22
+// Auch wenn der Bogen nicht anonymisiert ist, dürfen Sie gern Ihre Meinung offen kundtun.
+// Sowohl positive als auch negative Anmerkungen werden gern gesehen und zur stetigen Verbesserung genutzt.
+// Versuchen Sie in dieser Auswertung also stets sowohl Positives wie auch Negatives zu erwähnen.
+
+**Von:** Tobias Kadenbach
+
+**Gruppe:** 40
+
+== Was habe ich gelernt / was habe ich nicht gelernt?
+Gelernt:
+- Unittests in Spring
+- FileUploads
+
+
+Nicht gelernt:
+- Sinnvolle Tests: Die Codecoverage hochzuhalten war teilweise relativ anstrengen wodurch relativ schelchte Unittests geschrieben wurden
+
+
+== Welche Erfahrungen habe ich mit der Zusammenarbeit im Team gemacht?
+- Gute Kommunikation im Team die sehr von privaten Kanälen profitiert hat
+- gerechte Aufteilung der Issues
+- (fast) durchgehend hohes Engagement der Teammitglieder
+
+== Welche Erfahrungen habe ich bei der Wiederverwendung von Bibliotheken/Frameworks (insbesondere SalesPoint) gemacht?
+- Salespoint nimmt einem viele Freiheiten und schränkt mehr ein als dass es hilft, da das System recht statisch ist und sich nur wenig auf eigene Bedürfnisse anpassen lässt
+- Lombok ist in verbindung mit der JPA nochmal besser
+
+
+== Welche Vorschläge zur weiteren Verbesserung des Softwarepraktikums gibt es?
+- Vielleicht Kurze Einführung in expizite Frameworks wie z.B. Mockito wären cool
+
+== Feedback für den Tutor
+- Gute Erreichbarkeit des Tutors
+- bleibt auch bei Fragen die nicht sofort beantwortet werden konnten dran und meldet sich sobald er die Lösung hat
+- In Meetings wurde kurz und bündig Vorgestellt was in der nächsten Woche zu erledigen ist, ohne das Meeting unnötig in die Länge zu ziehen
+- Viel Erfahrung auch bei Komplexeren Problemstellungen
+
+== Sonstiges und Anmerkungen
+Keine

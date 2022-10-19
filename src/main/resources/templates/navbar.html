@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <!--meta data for crossdevice scaling -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap base-stylesheet without JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- navbar specific stylesheet -->
+    <link th:href="@{/resources/css/navbar.css}" rel="stylesheet"
+          href="/resources/css/navbar.css" type="text/css"/>
+    <!--JS for dropdowns-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="row" th:fragment="navbar">
+    <div class="col-md-12">
+        <nav class="navbar">
+            <div class="navbar-logo">
+                <h1>
+                    Schiller
+                </h1>
+            </div>
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="landingpage.html" th:href="@{/}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2 13.5V7h1v6.5a.5.5 0 0 0 .5.5h9a.5.5 0 0 0 .5-.5V7h1v6.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5zm11-11V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"/>
+                            <path fill-rule="evenodd" d="M7.293 1.5a1 1 0 0 1 1.414 0l6.647 6.646a.5.5 0 0 1-.708.708L8 2.207 1.354 8.854a.5.5 0 1 1-.708-.708L7.293 1.5z"/>
+                        </svg>
+                        Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown show">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuShop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+                                <path d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+                            </svg>
+                            Shop
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkAccount">
+                            <!--the following will need to be adjusted for visibility for either unregistered and logged in-->
+                            <a class="dropdown-item" href="shop.html" th:href="@{/bookshop}">Bücher</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="shop.html" th:href="@{/dvdshop}">DVD's</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="shop.html" th:href="@{/cdshop}">CD's</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16" id="navbarsvgcart">
+                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                    </svg>
+                    <a class="nav-link" href="cart.html" id="navbarcart" th:href="@{/cart}" th:text="${session.cart} == null or ${session.cart.isEmpty()} ? #{navbar.cart} : #{navbar.cart} + ' (' + ${session.cart.stream().count()} + ')'">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown show">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuShop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                                <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811V2.828zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                            </svg>
+                            Events
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkAccount">
+                            <!--the following will need to be adjusted for visibility for either unregistered and logged in-->
+                            <a class="dropdown-item" href="shop.html" th:href="@{/events}">Liste</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="shop.html" th:href="@{/calendar}">Kalender</a>
+                            <div class="dropdown-divider" sec:authorize="hasRole('EMPLOYEE')"></div>
+                            <a class="dropdown-item" href="shop.html" sec:authorize="hasRole('EMPLOYEE')" th:href="@{/addevent}">Event hinzufügen</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html" th:href="@{/contact}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chat-dots" viewBox="0 0 16 16">
+                            <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                            <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2z"/>
+                        </svg>
+                        Contact
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="impressum.html" th:href="@{/impressum}">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
+                            <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z"/>
+                        </svg>
+                        Impressum
+                    </a>
+                </li>
+                <li><!--this part will be changed later -->
+                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" method="get" th:action="@{/search}">
+                        <input type="search" class="form-control form-control-dark" placeholder="Search..." aria-label="Search" id="keyword" name="keyword" th:value="${keyword}">
+                    </form>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown show">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuOrders" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" sec:authorize="hasRole('EMPLOYEE') and hasRole('EMPLOYEE')">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cash-coin" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8zm5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0z"/>
+                                <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"/>
+                                <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1H1z"/>
+                                <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"/>
+                            </svg>
+                            Orders
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkAccount">
+                            <!--the following will need to be adjusted for visibility for either unregistered and logged in-->
+                            <a class="dropdown-item" href="orders.html" th:href="@{/openOrders}">Open orders</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="orders.html" th:href="@{/completedOrders}">Completed orders</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="orders.html" sec:authorize="hasRole('BOSS')" th:href="@{/finances}">Finances</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown show" sec:authorize="hasRole('EMPLOYEE')">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLinkInventory" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-ruled" viewBox="0 0 16 16">
+                                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h7v1a1 1 0 0 1-1 1H6zm7-3H6v-2h7v2z"/>
+                            </svg>
+                            Inventory
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkInventory">
+                            <a class="dropdown-item" href="inventory.html" th:href="@{/inventory}" sec:authorize="hasRole('EMPLOYEE')" th:text="#{navbar.inventory}">Inventory</a>
+                            <div class="dropdown-divider" sec:authorize="hasRole('BOSS')"></div>
+                            <a class="dropdown-item" href="additem.html" th:href="@{/additem}" sec:authorize="hasRole('BOSS')" th:text="#{navbar.addItem}">Add Item</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown show" sec:authorize="hasRole('BOSS')">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLinkManagement" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-person" viewBox="0 0 16 16">
+                                <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z"/>
+                            </svg>
+                            Usermanagement
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkManagement">
+                            <a class="dropdown-item" href="addemployee.html" th:href="@{/addemployee}" sec:authorize="hasRole('BOSS')" th:text="#{navbar.addemployee}">Add Employee</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="employeemanagement.html" th:href="@{/employeemanagement}" sec:authorize="hasRole('BOSS')" th:text="#{navbar.employeemanagement}">Manage Employees</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="customermanagement.html" th:href="@{/customermanagement}" sec:authorize="hasRole('BOSS')" th:text="#{navbar.customermanagement}">Manage Customers</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <div class="dropdown show">
+                        <a class="btn dropdown-toggle" href="#" role="button" id="dropdownMenuLinkAccount" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                            </svg>
+                            Account
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLinkAccount">
+                            <!--the following will need to be adjusted for visibility for either unregistered and logged in-->
+                            <a class="dropdown-item" href="accountmanagement.html" th:href="@{/accountmanagement}" sec:authorize="hasRole('CUSTOMER')" th:text="#{navbar.accountmanagement}">Manage Account</a>
+                            <div class="dropdown-divider" sec:authorize="!isAuthenticated()"></div>
+                                <!--hides once logged in-->
+                                <a class="dropdown-item" sec:authorize="!isAuthenticated()" href="registration.html" th:href="@{/register}" th:text="#{navbar.registration}">Register</a>
+                            <div class="dropdown-divider" sec:authorize="!isAuthenticated()"></div>
+                            <!--hides once logged in-->
+                                <a class="dropdown-item" sec:authorize="!isAuthenticated()" href="login.html" th:href="@{/login}" th:text="#{navbar.login}">Login</a>
+                            <div class="dropdown-divider"></div>
+                            <!--this throws you at the landingpage again-->
+                            <a class="dropdown-item text-center">
+                                <form sec:authorize="isAuthenticated()" th:action="@{/logout}" method="post">
+                                    <button type="submit" class="btn btn-lg" th:text="#{navbar.logout}">Logout</button>
+                                </form>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <hr>
+    </div>
+</div>
+</body>
+</html>

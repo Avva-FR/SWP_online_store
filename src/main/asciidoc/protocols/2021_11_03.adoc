@@ -1,0 +1,54 @@
+= Protokoll Gruppe 40
+
+Treffen am 03.11.2021
+
+Ort:      APB/2101 +
+Beginn:   14:50 Uhr +
+Ende:     16:00 Uhr
+
+__Schriftführer: gemeinsam in CodiMD__
+
+*Nächstes Treffen:* +
+10.11.2021, 14:50 Uhr, APB/E006/U
+
+__Teilnehmer:__
+//Tabellarisch oder Aufzählung, Kennzeichnung von Teilnehmern mit besonderer Rolle (z.B. Kunde)
+
+- Bozhidar
+- Tobias
+- Ole
+- Markus
+- Jan
+- Florian
+
+== Bemerkungen
+- Generelle Anpassung der Abgabefristen: Dienstags vorm Weekly um 23:59 Uhr
+
+- Überarbeitungsvorschläge für das Pflichtenheft
+
+- Meilenstein bestanden
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status |Bemerkung
+|…     |…       |…      |…
+|===
+
+
+== Aktueller Stand
+Videoshop von fast allen fertiggestellt
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|…     |…     |…            |…                |…
+|===

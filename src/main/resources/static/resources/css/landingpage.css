@@ -1,0 +1,26 @@
+body{
+    margin:0;
+    padding:0;
+    background:#f0f0f0;
+    font-family: 'Helvetica', sans-serif;
+}
+/* use <div class="container banner"> before adding navigationbar-items then annotate for each other page like so
+.landingpage{
+    height: 100vh;                          scales it to 100% of resolution vertically
+    width: 100%;                            scales it to 100% of resolution horizontally
+    background:url(img/background.png);
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+*/
+/*dial in the center for the flavour text*/
+.landingpage_headline{
+    margin-top: 9%;
+    transform: translateY(-9%);
+
+}
+.landingpage_text {
+    margin-left: 50%;
+    transform: translateX(-50%);
+}

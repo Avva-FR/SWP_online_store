@@ -1,0 +1,46 @@
+= Persönliches Feedback eines Teammitgliedes des Softwarepraktikums 2021/22
+
+**Von: Florian Röder **
+
+**Gruppe: 40**
+
+== Was habe ich gelernt / was habe ich nicht gelernt?
+* Arbeiten im SCRUM-Prinzip
+* lombok ist super
+* Effektives Einarbeiten in gute Doku (HTML, CSS, JS, Bootstrap, [SP])
+* Effektives Arbeiten in einer Gruppe über git
+* Software-Lifecycle einmal durcharbeiten (bis auf unten genannte Ausnahmen)
+
+== Welche Erfahrungen habe ich mit der Zusammenarbeit im Team gemacht?
+* bis auf eine Außnahme waren alle engagiert und haben partizipiert
+* Kommunikation war hervorragend
+* Gegenseitige Hilfe war schnell realisierbar durch gute Kommunikation
+* Loadbalancing wurde versucht zu erreichen
+* Spring, SalesPoint werden von allen gleichermaßen geliebt :)
+
+== Welche Erfahrungen habe ich bei der Wiederverwendung von Bibliotheken/Frameworks (insbesondere SalesPoint) gemacht?
+* - Salespoint erschwerte öfters die Implementation, statt dieser zuträglich zu sein
+* - SP Doku ist zwar recht gut im Vergleich, aber Einzelheiten die dann eigentlich relevant sind z.B. über eine Pfadvariable an OrderLines zu kommen ist nicht erwähnt, erschwerte so einiges
+* - Thymeleaf Doku ist wo? Das eine Kapitel aus dem Buch und die Vorlesungen welche zur Verfügung steht kann nicht ernsthaft gemeint sein, erschwerrte gesamte Arbeit unnatürlich und unnötig
+* - riesen Overhead an Frameworks (Spring, SP, Bootstrap, junit, hamcrest und co)
+* + Eventlistener sind sehr angenehm implementiert
+* + lombok ist top
+
+== Welche Vorschläge zur weiteren Verbesserung des Softwarepraktikums gibt es?
+* Ziel sollte ja sein OOP näher zu bringen, das steht "marginal" im Konflikt mit CRUD -> Get / Post rinse repeat (und Automagic, DependencyInjection). z.B. kann man ja Augenmerk auf die Mappings zwischen den Klassen siehe @OneToMany und co. und dann sql Jointablelogik dann für die CRUDs implementieren
+* Sonarcube wurde auch eigentlich nur "befriedigt", die Codesmells sind teilweise hinderlich für guten Code, da könnte man u.a. Codeduplicates & Linelength mal überarbeiten
+* Einfühtungsveranstaltungen / Onlinekurs für SP, Spring, Thymeleaf, junit und Java Recap im Vorhinein anbieten oder längere Einarbeitungszeit
+* Der Zeitaufwand ist zu hoch für ein Standardmodul -> Workload/Menge besser balancieren
+* Die Idee Fullstack Entwicklung des gleichen Projekts von 6 Personen zu betreiben ist nicht umsetzbar, findet auch nirgens in der Form Anwendung
+* Angenommen man würde das in der Form pflegen und jeder würde alles machen, der Overhead der alleine durch das lernen der einzelnen Frameworks verbunden ist würde die Aufgaben unerfüllbar machen
+* Aufgabenteilung im Sinne von Entwicklungsschritten sollte dafür eingesetzt werden (Frontend andy, Backend, Test, Docu) wäre eine sinnvolle Trennung der Aufgabenkomplexe (permanent)
+* Klassendiagramme können durch die UML-Autogeneration von IntelliJ ersetzt werden (die zeigt alle relevanten externen Interaktionen an)
+
+== Feedback für den Tutor
+* TOP!
+* einer der angenehmsten Menschen mit dem ich an der TU arbeiten durfte
+* bei Fragen immer erreichbar, optionale Treffen außerhalb des wöchentlichen angeboten
+* vielen Dank für die Treffen in Präsenz!
+
+== Sonstiges und Anmerkungen
+* + Software-Lifecycle ist sehr gut in den Aufgaben umgesetzt (außer Perf. Analysis und logischerweise Maintanence)

@@ -1,0 +1,64 @@
+= Protokoll Gruppe 40
+
+Treffen am 12.01.2022
+
+Ort:      BBB +
+Beginn:   15:00 Uhr +
+Ende:     15:35 Uhr
+
+__Schriftführer: Gemeinsam in CodiMD__
+
+*Nächstes Treffen:* +
+19.01.2022, 14:50 Uhr, BBB
+
+__Teilnehmer:__
+
+- Tobias
+- Ole
+- Markus
+- Jan
+- Florian
+
+== Bemerkungen
+__Zwischenmeeting__
+
+- Muss-Kriterien, Doku und Kundenwünsche müssen am 23.01.2022 fertig sein (endgültig)
+- Cross-Testing Feedback einarbeiten
+- Code Coverage verbessern
+- Entwicklerdoku überarbeiten
+- Cross-Testing Reports in ein Dokument zusammenfassen
+
+Abschlusspräsentation am 02.02. zwischen 13:00 Uhr und 14:30 Uhr.
+-> Kundenwunsch in Präsentation hervorheben
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status |Bemerkung
+|…     |…       |…      |…
+|===
+
+
+== Aktueller Stand
+- Inventar: Sortierung nach Preis einbauen
+- Bestellungen: Sortierung nach Preis einbauen
+- In Warenkorb Bild abbilden -> Bug: Pfad für Coverpictures falsch
+- Genre-Suche case-insensitive machen
+- Customer-Management: Sortierung nach offenen Rechnungen, PLZ und Stadt
+- Bug: Leerer Warenkorb konnte in Bestellung überführt werden
+- Ordermanagement: Manchmal Preis bei 0€ (s. o.) und in eben diesen Fällen ist die Detailansicht leer
+- Finanzübersicht über die letzten 3 Monate (oder auswählbaren Übersichtszeitraum)
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|…     |…     |…            |…                |…
+|===

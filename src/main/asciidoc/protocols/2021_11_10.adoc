@@ -1,0 +1,50 @@
+= Protokoll Gruppe 40
+
+Treffen am 10.11.2021
+
+Ort:      APB/E006/U +
+Beginn:   14:50 Uhr +
+Ende:     15:30 Uhr
+
+__Schriftführer: gemeinsam in CodiMD__
+
+*Nächstes Treffen:* +
+16.11.2021, 18:00 Uhr, BBB link tba
+
+__Teilnehmer:__
+//Tabellarisch oder Aufzählung, Kennzeichnung von Teilnehmern mit besonderer Rolle (z.B. Kunde)
+
+- Bozhidar
+- Tobias
+- Ole
+- Markus
+- Jan
+- Florian
+
+
+== Bemerkungen
+
+Kurzes Meeting, kurzes Update der Sachlage.
+Pflichtenheft bitte aufräumen siehe nugenutzte Templates.
+
+== Retrospektive des letzten Sprints
+
+Videoshop abgeschlossen.
+
+== Aktueller Stand
+Aufteilung der Prototypingaufgaben sowie deren Dokumentation abgeschlossen.
+
+== Planung des nächsten Sprints
+Fertigstellung der Prototypingaufgaben sowie deren Dokumentation.
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|…     |Doku Inventory |            |Ole               |angefangen
+|…     |Prototyp Inventory|            |Tobias              |angefangen
+|…     |Prototyp Order/Cart|            |Jan               |angefangen
+|…     |Prototyp User |    | Markus               |angefangen
+|…     |Doku User|            |Flo               |angefangen
+|…     |Doku Order/Cart |            |Bozho               |angefangen
+|===

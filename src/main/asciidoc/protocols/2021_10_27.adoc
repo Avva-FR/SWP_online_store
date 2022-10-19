@@ -1,0 +1,52 @@
+= Protokoll Gruppe 40
+
+Treffen am 27.10.2021
+
+Ort:      APB/2101 +
+Beginn:   14:50 Uhr +
+Ende:     15:31 Uhr
+
+__Schriftführer: gemeinsam in CodiMD__
+
+*Nächstes Treffen:* +
+03.11.2021, 14:50 Uhr, APB Raum noch unbekannt
+
+__Teilnehmer:__
+//Tabellarisch oder Aufzählung, Kennzeichnung von Teilnehmern mit besonderer Rolle (z.B. Kunde)
+
+- Bozhidar
+- Tobias
+- Ole
+- Markus
+- Jan
+- Florian
+
+
+== Bemerkungen
+Spezifizierung der Aufgabenstellung vom Tutor bekommen
+
+== Retrospektive des letzten Sprints
+Gab es schon einen _Sprint_?
+
+Ansonsten wurden Aufgaben fürs Pflichtenheft verteilt.
+Einige Fragen zum Videoshop konnten geklärt werden.
+
+
+== Aktueller Stand
+Videoshop-Aufgaben wurden von allen bearbeitet, aber noch nicht fertiggestellt.
+Pflichtenheft-Aufgaben wurden verteilt und teils angefangen.
+
+== Planung des nächsten Sprints
+Grobe Aufteilung der Pflichtenheft-Aufgaben:
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|…     |Kontextdiagramm & Top-Level-Architektur      |            |Ole               |angefangen
+|…     |Datenmodell      |            |Tobias              |angefangen
+|…     |Use-Cases      |            |Jan               |angefangen
+|…     |Akzeptanztestfälle      |            |Markus               |angefangen
+|…     |GUI Prototyp      |            |Flo               |angefangen
+|…     |Funktionale Anforderungen      |            |Bozho               |angefangen
+|===

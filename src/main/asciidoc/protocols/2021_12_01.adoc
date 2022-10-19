@@ -1,0 +1,59 @@
+= Protokoll Gruppe 40
+
+Treffen am 01.12.2022
+
+Ort:      BBB +
+Beginn:   14:55 Uhr +
+Ende:     15:55 Uhr
+
+__Schriftführer: Ole Voß__
+
+*Nächstes Treffen:* +
+07.12.2021, 14:50 Uhr, BBB
+
+__Teilnehmer:__
+//Tabellarisch oder Aufzählung, Kennzeichnung von Teilnehmern mit besonderer Rolle (z.B. Kunde)
+
+- Bozhidar
+- Tobias
+- Ole
+- Markus
+- Jan
+- Florian
+
+
+== Bemerkungen
+Meilenstein akzeptiert, unter Vorbehalt, dass bis nächste Woche alles gemerged und zuende implementiert ist
+
+Mehr Tests schreiben!
+
+SonarLint benutzen und Code demgemäß anpassen
+
+Feature-Branches in main mergen
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status |Bemerkung
+|…     |…       |…      |…
+|===
+
+
+== Aktueller Stand
+Basisfunktionalität größtenteils fertig, nur noch nicht auf dem main branch
+
+== Planung des nächsten Sprints
+Bestimmung der Präsentatoren für Zwischenpräsentation am 2.12. 18:30 +
+ - Ole: Teil 1 (Organisation, Entwurf & Herangehensweise)
+ - Tobi: Teil 2 (Vorführung der App / des Codes)
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|…     |…     |…            |…                |…
+|===

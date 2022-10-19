@@ -1,0 +1,54 @@
+= Protokoll Gruppe 40
+
+Treffen am 19.01.2022
+
+Ort:      BBB +
+Beginn:   14:50 Uhr +
+Ende:     15:35 Uhr
+
+__Schriftführer: Gemeinsam in CodiMD__
+
+*Nächstes Treffen:* +
+26.01.2022, 14:50 Uhr, BBB
+
+__Teilnehmer:__
+
+- Bozhidar
+- Tobias
+- Markus
+- Jan
+- Florian
+
+== Bemerkungen
+__Zwischenmeeting__
+
+- Jeder soll das Evaluation Sheet bis zum 26.01.2022 ausfüllen.
+- Jeder muss bis zum 28.01.2022 die Einverständniserklärung für die Prüfung abgeben.
+- BBB funktioniert bei Firefox 96.0 nicht den Anforderungen entsprechend. Empfehlung: Auf Chrome für die Präsentation setzen.
+- Optional: Teilnehmerzahl bei Event für Admin sichtbar machen
+- Optional: Successmessage für Einkauf hinzufügen
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status |Bemerkung
+|…     |…       |…      |…
+|===
+
+
+== Aktueller Stand
+- Letzte Änderungen und Updates bis zur Abgabe am 23.01.2022 23:59 Uhr MEZ.
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|…     |…     |…            |…                |…
+|===

@@ -1,0 +1,42 @@
+= Persönliches Feedback eines Teammitgliedes des Softwarepraktikums 2021/22
+// Auch wenn der Bogen nicht anonymisiert ist, dürfen Sie gern Ihre Meinung offen kundtun.
+// Sowohl positive als auch negative Anmerkungen werden gern gesehen und zur stetigen Verbesserung genutzt.
+// Versuchen Sie in dieser Auswertung also stets sowohl Positives wie auch Negatives zu erwähnen.
+
+**Von:**
+
+**Gruppe:**
+
+== Was habe ich gelernt / was habe ich nicht gelernt?
+
++Gelernt:
+-Mit Spring zu arbeiten
+-Wie man Dokumentation erstellt
+-Gut in einem Team komplexe Probleme zu lösen
+
+-Nicht gelernt:
+-gur mit StarUML zu arbeiten
+
+== Welche Erfahrungen habe ich mit der Zusammenarbeit im Team gemacht?
+
+-Alle im Team sind sehr nett, keine Probleme bei der Kommunikation
+-Gut verteilte Arbeit während des Projektes
+-Wir haben uns einander bei Bedarf geholfen
+
+== Welche Erfahrungen habe ich bei der Wiederverwendung von Bibliotheken/Frameworks (insbesondere SalesPoint) gemacht?
+
+-Salespoint war nicht sehr intuitiv und es gab Probleme mit der Flexibilität
+
+== Welche Vorschläge zur weiteren Verbesserung des Softwarepraktikums gibt es?
+
+-Gute Erklärungen am Anfang, durch Vorbereitungsvideos oder mehrere Beispiele
+-Bessere Dokumentation für Salespoint schreiben
+
+== Feedback für den Tutor
+
+-Der beste Tutor, war sehr hilfsreik, freundlich und erklärte alles einfach und gut. Bei Bedarf hat sich seperat mit uns getrofen und uns wichtige Hinweise gegeben.
+-Hat immer uns gut durch das Projekt navigiert
+-Danke für alles Andreas!
+
+== Sonstiges und Anmerkungen
+- Keine

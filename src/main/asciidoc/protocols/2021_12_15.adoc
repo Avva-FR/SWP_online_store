@@ -1,0 +1,68 @@
+= Protokoll Gruppe 40
+
+Treffen am 15.12.2021
+
+Ort:      BBB +
+Beginn:   15:00 Uhr +
+Ende:     15:40 Uhr
+
+__Schriftführer: Gemeinsam in CodiMD__
+
+*Nächstes Treffen:* +
+12.01.2021, 14:50 Uhr, BBB
+
+__Teilnehmer:__
+
+- Bozhidar
+- Tobias
+- Ole
+- Markus
+- Jan
+- Florian
+
+== Bemerkungen
+__Zwischenmeeting__
+
+Hinweis: Unbedingt für die SWP-Prüfung in jExam einschreiben.
+
+- Funktion zur alphabetischen Sortierung und zur Sortierung nach Preis im Shop einbauen
+- Hinzufügen von Artikeln mit imageupload (Tipp: https://www.baeldung.com/java-db-storing-files)
+- Kundenwunsch für später: Kalender auch ohne JS darstellen können
+- Im Customer Management sortieren nach Kunden, die noch Rechnungen offen haben
+- Sortierung kann über JS eingebunden werden
+- Inventory nach Quantity sortierbar sein, um zu sehen was nachbestellt werden muss
+
+Anmerkungen:
+- Andreas ist ab nächster Woche nur am 20.12. für Konsultationen erreichbar.
+- Deadline für Cross-Testing: 22.12.2021
+
+Nächstes Treffen: Bei Bedarf evtl. in der Woche vom 03.01., ansonsten 12.01
+
+Schluss: 15:40 Uhr
+
+== Retrospektive des letzten Sprints
+*Issue referenziert die Issue ID von GitHub*
+// Wie ist der Status der im letzten Sprint erstellten Issues/veteilten Aufgaben?
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Aufgabe |Status |Bemerkung
+|…     |…       |…      |…
+|===
+
+
+== Aktueller Stand
+- Aufgabenverteilung im Auge behalten
+- Code Coverage muss durch mehr Tests verbessert werden.
+
+
+== Planung des nächsten Sprints
+*Issue referenziert die Issue ID von GitHub*
+
+// See http://asciidoctor.org/docs/user-manual/=tables
+[option="headers"]
+|===
+|Issue |Titel |Beschreibung |Verantwortlicher |Status
+|…     |…     |…            |…                |…
+|===

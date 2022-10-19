@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <!--meta data for crossdevice scaling -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap base-stylesheet without JS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- navbar specific stylesheet -->
+    <link th:href="@{/resources/css/navbar.css}" rel="stylesheet"
+          href="../static/resources/css/navbar.css" type="text/css"/>
+    <!--JS for dropdowns-->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <title>Orderdetail</title>
+</head>
+<body>
+<div th:include="navbar :: navbar"></div>
+
+<div class="card">
+    <div class="alert alert-success" th:if="${successful}" role="alert">
+        Erfolgreich angemeldet.
+    </div>
+    <div class="card-body">
+        <form sec:authorize="hasRole('BOSS')" class="form-inline" method="post" th:action="@{/}" th:if="${event.isInFuture()}">
+            <input type="hidden" name="pid" value="0" th:value="${event.getId()}"/>
+            <input type="text" class="mb-2 mr-sm-2" id="inlineFormInputName2" th:value="${event.getTitle()}" placeholder="Jane Doe">
+            <button type="submit" class="btn btn-primary mb-2">Ändern</button>
+        </form>
+        <h5  sec:authorize="!hasRole('BOSS')" class="card-title" th:text="${event.getTitle()}">Last Action Hero</h5>
+        <h6 class="card-subtitle mb-2 text-muted" th:text="${#temporals.format(event.asLocalDateTime(), 'dd.MM.yyyy HH:mm')}" >Card subtitle</h6>
+        <h6 class="card-subtitle mb-2 text-muted" th:text="'Dauer: ' + ${event.getMinutesDuration()} + ' Minuten'" >Card subtitle</h6>
+        <h6 class="card-subtitle mb-2 text-muted" th:text="'Teilnehmer: ' + ${event.getRegistrations()}" >Card subtitle</h6>
+        <p class="card-text" th:text="${event.getDescription()}">Desc</p>
+
+        <ol sec:authorize="hasRole('BOSS')"  th:each="parts : ${event.getParticipants()}">
+            <li th:text="${parts.getUserAccount().getUsername()}"></li>
+        </ol>
+
+        <form sec:authorize="hasRole('CUSTOMER')" class="ui form" method="get" th:if="${!registered}" th:action="@{/event/{id}/register(id=${event.id})}">
+            <button href="#" class="btn btn-outline-primary" type="submit" th:text="#{events.register}">Registrieren</button>
+        </form>
+
+        <form sec:authorize="hasRole('CUSTOMER')" class="ui form" method="get" th:if="${registered}" th:action="@{/event/{id}/unregister(id=${event.id})}">
+            <button href="#" class="btn btn-outline-primary" type="submit" th:text="#{events.unregister}">Abmelden</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>

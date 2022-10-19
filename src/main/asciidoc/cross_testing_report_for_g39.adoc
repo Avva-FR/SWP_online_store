@@ -1,0 +1,90 @@
+= Cross-Testing Feedback
+
+__Durchführende Gruppe: 40__
+__Anwendung von Gruppe: 39__
+
+== Getestetes System
+Welche Aufgabe/Problemstellung löst die Anwendung.
+
+Die Buchhandlung SCHILLER benötigt zur Erweiterung des Geschäftsmodells eine Webapplikation für den Verkauf und die Verwaltung von Büchern
+
+== Fehler-Report
+// See http://asciidoctor.org/docs/user-manual/#tables
+[options="header"]
+|===
+|Pfad |Parameter |Beschreibung |Rückgabe
+| /catalog?search=&type=books&sortBy=&order=ascending | Stock | Bücher werden mit Stock = 0 bei Start der App initialisiert | /catalog?search=&type=books&sortBy=&order=ascending
+| /book/f82033e7-b4dc-47db-970a-82c84d4cd780 | Stock | Bücher werden mit Stock = 0 bei Start der App initialisiert | /book/f82033e7-b4dc-47db-970a-82c84d4cd780
+| /catalog?search=&type=books&sortBy=name&order=ascending | Ascending, Name, Descending | Sortiert wird lediglich nach ersten Buchstaben (foundation 0 -> 1 -> 10 -> 11 -> ... -> 2) | /catalog?search=&type=books&sortBy=name&order=ascending
+| /catalog?search=&type=books&sortBy=price&order=ascending | Ascending, Price, Descending | Sort wiederholt nur nach ersten Buchstaben (the foundation 0 mit 359,91 -> the foundation 1(39,99) -> the foundation 10 (399,00) -> 11 (439,89) | /catalog?search=&type=books&sortBy=price&order=ascending
+| users/details?id=1 | Kunde (als BOSS) | Warum kann der Boss hier einfach die Kunden editieren? Man geht ja nicht daher und ändert Adressen von seinen Kunden. Beim Löschen würde ich noch mitgehen oder als deprecated/deceased markieren. | users/details?id=1
+| /profile | /profile (als Boss) | wirft Whitelabel error (kein Mapping) | HTTP Error 500
+| /orders | /orders (als Kunde) | wirft Whitelabel error (forbidden)  | HTTP Error 403
+| /employee | /employee (als Kunde) | wirft Whitelabel error (forbidden) | HTTP Error 403
+| /users | /users (als Kunde) | wirft Whitelabel error (forbidden) | HTTP Error 403
+| /inventory | /inventory (als Kunde) | wirft Whitelabel error (forbidden) | HTTP Error 403
+| /event/12 | Event, Calendar, Participation | Boss kann sich mehrmals für ein Event eintragen und unter dem "Participate boss"-Button ist eine Debug-Message (<p>SpringSecurityAuthenticationManagement.UserAccountDetails(username=boss, password=$2a$10$f/LV/aIL4sk/OK/c58homuMkRJp5BtPyBoCrhCmXnzjXDienfVe3S, isEnabled=true, authorities=[ROLE_BOSS])</p>) | /event/12
+| /profile/edit?id=4 | Edit Profile (Kunde) | Beim Ändern des Passworts keine Bestätigung/Fehlermeldung, ob es RegEx-konform eingegeben wurde | /profile/edit?id=4
+| /event/8 | Rolle Boss | Nach 9 Teilnehmern ist scheinbar das Maximum erreicht und es gibt einen Fehler beim 10. Mal. | HTTP Error 500 |
+|===
+
+== Sonstiges
+* Optik der Anwendung
+** /calendar (Kunde)
+*** Sieht überall praktisch und elegant aus.
+** /profile/edit?id=19 (Kunde)
+*** Die ganze Webseite und besonders die Forms kommen aus der HTML1 Hölle (Bootstrap ist doch schon in der Navbar drin, warum hier nicht?)
+*** Schrift, Forms und Buttons sind zu klein. Dadurch sieht die Seite ziemlich leer aus.
+** Overall
+*** Die Anwendung sieht bebildert sicherlich noch besser aus, aber das Layout und Design außerhalb der Profilbearbeitung sieht super aus
+*** Bilder für Events und Products machen die Seite hübscher, ohne diese kann man auch Produkte und Events nicht so leicht unterschieden.
+*** Verzerrt sich nicht beim Zoomen im Browser, top!
+
+* Fehlende Features
+** /register: (Kunde)
+*** PLZ, Ort, Hausnummer, Straße und Wiederholung des Passworts werden nicht auf Richtigkeit validiert.
+*** Es wird lediglich einmalig ein BSI-konformes Passwort erfragt.
+** /calender (Kunde)
+*** Man kann Events sehen, kann sich für diese jedoch nicht eintragen (nur der BOSS kann).
+** /calender (Boss)
+*** Start- und Enddatum können zwar eingestellt werden, Zeit aber nicht -> Event kann nicht hinzugefügt werden
+** /catalog (Kunde)
+*** Da Produkte mit 0 Stock initialisiert, werden kann man nichts kaufen. Auch lassen sich die Zahlen nicht erhöhen.
+*** Inventory =/= Katalog - Items aus dem Katalog sind als boss im Inventory nicht einsehbar und umgekehrt
+** /employee
+*** Edit funktioniert nicht. Liste enthält nur dummy data
+** /inventory (BOSS)
+*** Keiner der Buttons oder die Suche funktioniert, die Items im Shop werden hier auch nicht dargestellt
+** /orders (BOSS)
+*** Da Stock mit 0 initialisiert, kann ich das hier auch nicht testen
+** Allgemein
+*** Kein Unterschied zwischen User Roles, also es gibt nur Kunden, keine Mitarbeiter-Profile. Einführung einer Mitarbeiter-Rolle.
+
+* Interaktion mit der Anwendung (Usability)
+** Bis auf EditAccount ist der Umgang mit der Website intuitiv und einfach gestaltet.
+** Leider ist die Website erfüllt die Webseite aktuell nicht ihren Zweck, da die Hauptaufgabe dort nicht integriert ist (Produkte zu kaufen).
+** Kalender ist leicht zu benutzen, Events sind da und jeder kann diese schnell finden.
+** Wäre besser, wenn nicht nur der Titel eines Items, sondern auch das Vorschaubild zur Detailansicht des Produktes führen würde (im Shop)
+
+* Sicherheitslücken
+** User können Events editieren, wenn sie den Pfad herausfinden
+** Direct Object Reference bei dem editieren des eigenen Accounts (man tauscht die `?id=XX` gegen eine andere) ermögliche auslesen und editieren fremder Accounts, dieser Fehler ermöglicht auch privileg escalation, ich kann mit einem normalen User-Account Employee-Accounts editieren, deren Passwort ändern und so mehr Rechte erhalten
+** kein AccessControl bei /users/details?id=XX
+
+== Verbesserungsvorschläge
+* Bootstrap in /profile/edit?id=19 verwenden!
+* alles größer machen (Anwendung ist nur auf mind. 130 % Zoom angenehm (bei WQHD Bildschirm))
+* Bilder für Produkte hinzufügen
+* Bilder für Events hinzufügen
+* "Back to top"-Button am Ende der Shopseite
+* Item-Cards im Shop einheitlich gestalten (Bücher haben zentrierte Titel und Autoren, Discs nur nicht-zentrierte Titel)
+* Link zu den Produktdetails auf das Bild packen nicht auf den Namen (Bild macht über 50 % der Card aus Name vielleicht 5 %)
+* Auswahl des Media Types sollte direkt auf die HTML page referenzieren, anstatt die Auswahl über den "Suche"-Button wiederholen zu müssen
+* Suche nach Disc, wenn Book ausgewählt ist, gibt leeren Shop zurück hier Disc anzeigen
+* Stock initialisieren :D
+* Make profile editing great again!
+* Im Pflichtenheft gibt es keine Muss-Kriterien, diese werden hilfsreich sein, Features leicht zu finden und organisieren
+* Rickroll für 403 oder nen Errorhandler verwenden für die 404's und besonders 403's
+* Produktinformationen auch beim Klick auf das Bild anzeigen
+** Man kommt, ohne die URL selbst einzugeben, auch nicht auf die Pages (nicht in Navbar inkludiert), aber ein Handling für die Errors wäre schon nützlich :)
+** Einheitliche Sprache über die Anwendung hinweg

@@ -1,0 +1,45 @@
+= Persönliches Feedback eines Teammitgliedes des Softwarepraktikums 2021/22
+
+**Von:** Markus Ziehe
+
+**Gruppe:** 40
+
+== Was habe ich gelernt / was habe ich nicht gelernt?
+
+==== Gelernt:
+- SCRUM-Konzept
+- Das Konzept hinter agiler Software-Entwicklung.
+- Thymeleaf
+- Die Möglichkeit gehabt mich nach Jahren endlich mal mehr mit Spring zu befassen.
+- Umgang mit Mockito
+
+==== Nicht gelernt:
+- Wie man SonarQube sinnvoll zufrieden stellt. -> Manche Tests sind ziemlich sinnlos oder können nicht einmal vernünftig umgesetzt werden. Dadurch entstehen Tests, die rein dazu dienen SonarQube happy zu machen.
+- Wie ich meine Zeit sinnvoll einteile. (Liegt mit an Sicherheit grenzender Wahrscheinlichkeit jedoch eher weniger am SWT-Projekt.)
+- Dass ich mich erst in Dokumentationen einarbeiten sollte, bevor ich anfange zu programmieren.
+
+== Welche Erfahrungen habe ich mit der Zusammenarbeit im Team gemacht?
+- Das Team hat insgesamt sehr gut harmoniert.
+- Grundsätzlich viel Engagement der Beteiligten
+- Aufgabenteilung wurde - nach Möglichkeit - nach aktueller Belastung, nach Stärken und nach Interessen ausgestaltet.
+-Durch die Nutzung eines gemeinsamen Kommunikationskanals war ein schneller Austausch bei Fragen, Problemen o. Ä. i.d.R. schnell und unkompliziert möglich.
+
+== Welche Erfahrungen habe ich bei der Wiederverwendung von Bibliotheken/Frameworks (insbesondere SalesPoint) gemacht?
+- Zu Thymeleaf habe ich nur geringfügig Dokumentation gefunden, was die Arbeit stellenweise unangenehmer machte.
+- Das Schreiben von Tests war unter Umständen anspruchsvoll.
+- SonarQube stellte teils absurde Ansprüche, was in Teilen zu meiner Meinung nach sinnlosen Tests führte. Auch waren einige Angaben in SonarQube unter keinen Umständen nachvollziehbar oder gar logisch.
+
+== Welche Vorschläge zur weiteren Verbesserung des Softwarepraktikums gibt es?
+- Realistischere Angaben, wie viel Zeit man in dieses Projekt investieren sollte.
+
+== Feedback für den Tutor
+- Andreas war während des Projekts leicht erreichbar und hilfsbereit.
+- Er pflegte einen freundlichen und humorvollen Umgang, was durchaus motivationsfördernd ist.
+- Bei Fragen hat er stets geholfen.
+- Sein Angebot bspw. für extra Sessions o. Ä. war sehr zuvorkommend, auch wenn ich es nicht in Anspruch nehmen musste.
+- Die Meetings waren konstruktiv und insofern hilfreich, da er auf mögliche Schwierigkeiten hingewiesen hatte, sofern man diese bspw. noch nicht selbst wahrgenommen hatte.
+
+**Fazit:** Andreas ist super.
+
+== Sonstiges und Anmerkungen
+Ich hätte mir persönlich an der Stelle aber auch eine Einführungsveranstaltung für bspw. Thymeleaf oder Mockito gewünscht. Das hätte sicherlich einige Unklarheiten früher beseitigt.

@@ -1,0 +1,19 @@
+body{
+    margin:0;
+    padding:0;
+    background:#f0f0f0;
+    font-family: 'Helvetica', sans-serif;
+}
+.center {
+    margin: 0 auto;
+    width: 100%;
+}
+/*dialing in position of the login*/
+#loginform {
+    margin-top: 5%;
+    transform: translateY(-5%);
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 800px; /*700 seems good*/
+    text-align: center;
+}

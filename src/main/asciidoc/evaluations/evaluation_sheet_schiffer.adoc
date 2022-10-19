@@ -1,0 +1,48 @@
+= Persönliches Feedback eines Teammitgliedes des Softwarepraktikums 2021/22
+// Auch wenn der Bogen nicht anonymisiert ist, dürfen Sie gern Ihre Meinung offen kundtun.
+// Sowohl positive als auch negative Anmerkungen werden gern gesehen und zur stetigen Verbesserung genutzt.
+// Versuchen Sie in dieser Auswertung also stets sowohl Positives wie auch Negatives zu erwähnen.
+
+**Von: Jan Schiffer**
+
+**Gruppe: 40**
+
+== Was habe ich gelernt / was habe ich nicht gelernt?
+// Ausführung der positiven und negativen Erfahrungen, die im Softwarepraktikum gesammelt wurden
+Gelernt:
+
+- Arbeiten mit IntelliJ, Java Klassen und Frameworks
+
+- Umgang mit Git
+
+- Programmieren im Team
+
+Nicht gelernt:
+
+- Ist irgendwie schwer zu sagen was man nicht gelernt hat
+
+== Welche Erfahrungen habe ich mit der Zusammenarbeit im Team gemacht?
+// Kurze Beschreibung der Zusammenarbeit im Team. Was lief gut? Was war verbesserungswürdig? Was würden Sie das nächste Mal anders machen?
+Die Zusammenarbeit im Team lief gut. Wir haben viel miteinander kommuniziert und uns gut abgesprochen.
+Die Aufgabenverteilung hätte besser sein können, dies war aber zum Teil auch schwer abzuschätzen.
+
+== Welche Erfahrungen habe ich bei der Wiederverwendung von Bibliotheken/Frameworks (insbesondere SalesPoint) gemacht?
+// Einschätzung der Arbeit mit den bereitgestellten und zusätzlich genutzten Frameworks. Was War gut? Was war verbesserungswürdig?
+War man dann mal eingearbeitet, war das Framework sehr hilfreich.
+Gerade das Erstellen eines Warenkorbs etc. wurde sehr erleichtert durch SalesPoint.
+Das Einarbeiten war allerdings recht schwierig, ohne die Hilfe eines Kommilitone hätte ich mich sehr schwer getan.
+Die Doku war auch nur so semi hilfreich.
+
+== Welche Vorschläge zur weiteren Verbesserung des Softwarepraktikums gibt es?
+// Möglichst mit Beschreibung, warum die Umsetzung des von Ihnen angebrachten Vorschlages nötig ist.
+Hab ich nicht.
+
+== Feedback für den Tutor
+// Fühlten Sie sich durch den vom Lehrstuhl bereitgestellten Tutor gut betreut? Was war positiv? Was war verbesserungswürdig?
+Tutor war sehr nett und es hat Spaß gemacht mit ihm zusammenzuarbeiten. Nichts negatives auszusetzen.
+
+== Sonstiges und Anmerkungen
+// Welche Aspekte fanden in den oben genannten Punkten keine Erwähnung?
+Was ich so mitbekommen habe, ist es teilweise sehr unterschiedlich was jeder Tutor von einer Gruppe verlangt.
+Bei meinem ersten Versuch hat der Tutor nach bearbeiteten Issues geguckt, jetzt waren es eher Commits und Lines of Code.
+Ein einheitlicheres Bewertungssystem wäre gut.
